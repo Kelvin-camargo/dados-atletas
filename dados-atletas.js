@@ -21,10 +21,9 @@ calculaCategoria(){
 }
 
 //calculo de imc
-calculaIMC(){this.peso / (this.altura * this.altura)
-   return calculaIMC
-};
-
+calculaIMC() {
+    return this.peso / (this.altura * this.altura);
+  }
 
 //calcula a media valida
 calculaMediaValida() {
@@ -73,3 +72,15 @@ calculaMediaValida() {
   }
 }
 
+// dados disponibilizados pelo desafio 
+// Cria um objeto atleta
+const atleta = new Atleta("Cesar Abascal", 30, 80, 1.70, [10, 9.34, 8.42, 10, 7.88]);
+
+
+console.log(`nome:${atleta.obtemNomeAtleta()}`);
+console.log(`idade:${atleta.obtemIdadeAtleta()}`);
+console.log(`peso:${atleta.obtemPesoAtleta()}`);
+console.log(`notas:${atleta.obtemNotasAtleta()}`);
+console.log(`categorias:${atleta.calculaCategoria()}`);
+console.log(`imc:${atleta.calculaIMC()}`);
+console.log(`media:${atleta.calculaMediaValida()}`);

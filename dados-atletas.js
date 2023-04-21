@@ -43,5 +43,33 @@ calculaMediaValida() {
     }
   }
 
+// construindo os metodos das classe
+  obtemNomeAtleta() {
+    return this.nome;
+  }
+
+  obtemIdadeAtleta() {
+    return this.idade;
+  }
+
+  obtemPesoAtleta() {
+    return this.peso;
+  }
+
+  obtemNotasAtleta() {
+    return this.notas;
+  }
+
+  obtemCategoria() {
+    return this.calculaCategoria();
+  }
+
+  obtemIMC() {
+    return this.calculaIMC();
+  }
+
+  obtemMediaValida() {
+    return this.calculaMediaValida();
+  }
 }
 

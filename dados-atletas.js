@@ -20,8 +20,28 @@ calculaCategoria(){
     if(this.idade > 30 && this.idade < 9){return "Sem categoia"};
 }
 
+//calculo de imc
+calculaIMC(){this.peso / (this.altura * this.altura)
+   return calculaIMC
+};
+
+
+//calcula a media valida
+calculaMediaValida() {
+    let soma = 0;
+    let quantidade = 0;
+    for (let nota of this.notas) {
+      if (nota >= 0 && nota <= 10) {
+        soma += nota;
+        quantidade++;
+      }
+    }
+    if (quantidade === 0) {
+      return null;
+    } else {
+      return soma / quantidade;
+    }
+  }
 
 }
-
-
 
